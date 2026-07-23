@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Premium To-Do</title>
+    <!-- Modern Google Font: Outfit for headings, Inter for body -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --surface: #141b2d;
+            --surface-hover: #1c253d;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #8a2be2;
+            --accent-glow: rgba(138, 43, 226, 0.4);
+            --border: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at 50% 0%, var(--accent-glow) 0%, transparent 50%);
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        /* Top Navigation / Branding */
+        .nav {
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nav-logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-logo span {
+            color: var(--accent);
+        }
+
+        /* Container */
+        .container {
+            max-width: 860px;
+            margin: 60px auto;
+            padding: 0 30px;
+        }
+
+        /* Header Area */
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .header h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(138, 43, 226, 0.15);
+            color: #d8b4fe;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid rgba(138, 43, 226, 0.3);
+            box-shadow: 0 0 20px rgba(138, 43, 226, 0.1);
+            letter-spacing: 0.5px;
+        }
+
+        /* Content Sections */
+        .content-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+            border-color: rgba(255,255,255,0.15);
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .highlight-box {
+            background: linear-gradient(145deg, rgba(138,43,226,0.1) 0%, rgba(138,43,226,0.02) 100%);
+            border: 1px solid rgba(138,43,226,0.2);
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            color: #e2e8f0;
+            font-weight: 400;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight-box::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 4px; height: 100%;
+            background: var(--accent);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 2px;
+            background: var(--accent);
+        }
+
+        h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        ul {
+            color: var(--text-muted);
+            padding-left: 20px;
+            margin-bottom: 20px;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        li::before {
+            content: '•';
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        strong {
+            color: #f1f5f9;
+            font-weight: 600;
+        }
+
+        a {
+            color: #a855f7;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #c084fc;
+            text-decoration: underline;
+        }
+
+        code {
+            background: rgba(255,255,255,0.05);
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-family: monospace;
+            color: #d8b4fe;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+            margin-top: 60px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2.5rem; }
+            .content-card { padding: 30px 20px; }
+            .container { margin: 30px auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav-logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            To-Do <span>& Grocery</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <div class="header">
+            <h1>Privacy Policy</h1>
+            <div class="badge">Updated • July 23, 2026</div>
+        </div>
+
+        <div class="content-card">
+            
+            <p class="intro">Vikash Choudhary ("we," "us," or "our") operates the <strong>To-Do & Grocery</strong> mobile application. We respect your privacy and are committed to protecting your personal data.</p>
+            
+            <div class="highlight-box">
+                This Privacy Policy explains how we collect, use, disclose, and safeguard your information. <strong>Our core principle is that your data belongs to you.</strong> We do not run external databases to collect your tasks, and we never sell your data.
+            </div>
+
+            <div class="section">
+                <h2>1. Information We Collect</h2>
+                
+                <h3>A. Information You Provide</h3>
+                <ul>
+                    <li><strong>User Content:</strong> The tasks, grocery items, and preferences you create. <strong>This data is stored strictly locally on your device.</strong> We do not collect, transmit, or store your personal data on our servers.</li>
+                </ul>
+
+                <h3>B. Device Permissions & Local Processing</h3>
+                <p>Our app requests the following device permissions to provide specific features. Data processed by these sensors is handled locally and is <strong>never</strong> transmitted over the internet by our Service:</p>
+                <ul>
+                    <li><strong>Camera:</strong> Used exclusively for scanning barcodes or QR codes locally on your device.</li>
+                    <li><strong>Microphone & Speech Recognition:</strong> Used for speech-to-text input features. Audio data is processed by your device's native speech recognition APIs.</li>
+                    <li><strong>Biometrics (FaceID/TouchID):</strong> Used for locking the app and protecting your data. Biometric authentication is handled securely by your device's OS; we do not have access to your biometric templates.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>2. How We Use Your Information</h2>
+                <p>We use the local information on your device strictly to operate the Service:</p>
+                <ul>
+                    <li>To provide and maintain the app's core to-do and grocery tracking functionality.</li>
+                    <li>To allow you to manually export and import encrypted backups of your own data.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>3. Data Storage & Security</h2>
+                <p>Your data (tasks, lists, settings) is stored locally on your device using industry-standard encrypted database technology (<code>SQLCipher</code>). You have the option to manually export an encrypted backup file to your local file system. <strong>We have absolutely no access to your data or your backups.</strong></p>
+            </div>
+
+            <div class="section">
+                <h2>4. Data Retention & Deletion</h2>
+                <p>Because your data is stored exclusively on your device, you have complete control over it. You can permanently delete all your data at any time by simply uninstalling the app or clearing the app's data in your device settings.</p>
+            </div>
+
+            <div class="section">
+                <h2>5. Third-Party Services</h2>
+                <p>The Service utilizes standard operating system APIs (such as Google Play Services on Android) for core functionality like speech recognition. These native services operate under their respective platform privacy policies. We <strong>do not</strong> use third-party analytics (like Firebase Analytics) or advertising networks.</p>
+            </div>
+
+            <div class="section">
+                <h2>6. Children's Privacy</h2>
+                <p>Our Service is not directed to individuals under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
+            </div>
+
+            <div class="section">
+                <h2>7. Contact Us</h2>
+                <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+                <p><strong>Email:</strong> <a href="mailto:vikashchoudhary.ara@gamil.com">vikash choudhary</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 To-Do & Grocery. All rights reserved.
+    </div>
+
+</body>
+</html>
