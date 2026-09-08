@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhvani — Privacy Policy & Terms of Service</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0B0B0E;
+      --card-bg: rgba(22, 22, 28, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --primary: #F5B041;
+      --primary-glow: rgba(245, 176, 65, 0.25);
+      --text: #F0F2F5;
+      --text-muted: #9BA3AF;
+      --accent-pill: rgba(245, 176, 65, 0.12);
+      --danger: #FF5A5F;
+      --danger-bg: rgba(255, 90, 95, 0.08);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.65;
+      padding: 40px 20px 80px;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 15% 10%, rgba(245, 176, 65, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 60%, rgba(245, 176, 65, 0.05) 0%, transparent 45%);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-pill);
+      border: 1px solid rgba(245, 176, 65, 0.3);
+      padding: 6px 16px;
+      border-radius: 999px;
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: -0.8px;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #FFFFFF 40%, var(--primary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subhead {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 620px;
+      margin: 0 auto 10px;
+    }
+
+    .last-updated {
+      display: inline-block;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.04);
+      padding: 4px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--card-border);
+    }
+
+    /* Navigation Switcher */
+    .tab-bar {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin: 36px 0 44px;
+      background: rgba(255, 255, 255, 0.03);
+      padding: 6px;
+      border-radius: 999px;
+      border: 1px solid var(--card-border);
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      font-family: inherit;
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      color: #0E0E12;
+      box-shadow: 0 4px 18px var(--primary-glow);
+    }
+
+    .tab-btn:hover:not(.active) {
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    /* Cards & Sections */
+    .legal-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 36px;
+      margin-bottom: 28px;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+      transition: border-color 0.25s ease;
+    }
+
+    .legal-card:hover {
+      border-color: rgba(255, 255, 255, 0.14);
+    }
+
+    .section-title {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .section-title .number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: var(--accent-pill);
+      color: var(--primary);
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    p {
+      color: #D1D5DB;
+      font-size: 0.98rem;
+      margin-bottom: 16px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 16px 0;
+    }
+
+    li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 14px;
+      color: #D1D5DB;
+      font-size: 0.96rem;
+    }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 10px;
+      color: var(--primary);
+      font-weight: bold;
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    strong {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    /* Warning / Liability Callout */
+    .callout-liability {
+      background: var(--danger-bg);
+      border: 1px solid rgba(255, 90, 95, 0.3);
+      border-radius: 14px;
+      padding: 22px;
+      margin: 20px 0;
+    }
+
+    .callout-liability h4 {
+      color: var(--danger);
+      font-size: 1.05rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .callout-liability p {
+      color: #F8D7DA;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    /* Code & Path style */
+    code {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--primary);
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      font-family: monospace;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--card-border);
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      body {
+        padding: 24px 14px 60px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      .legal-card {
+        padding: 24px 18px;
+      }
+      .tab-bar {
+        width: 100%;
+      }
+      .tab-btn {
+        flex: 1;
+        padding: 10px 14px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="brand-badge">Dhvani Music Player</div>
+      <h1>Legal & Transparency</h1>
+      <p class="subhead">Everything you need to know about your privacy, permissions, and the terms governing your use of Dhvani.</p>
+      <div class="last-updated">Last Updated: September 8, 2026</div>
+
+      <!-- Navigation Switcher -->
+      <div class="tab-bar">
+        <button class="tab-btn active" id="tab-privacy" onclick="showTab('privacy')">Privacy Policy</button>
+        <button class="tab-btn" id="tab-terms" onclick="showTab('terms')">Terms & Conditions</button>
+      </div>
+    </header>
+
+    <!-- ================================================================= -->
+    <!-- PRIVACY POLICY SECTION -->
+    <!-- ================================================================= -->
+    <div id="content-privacy">
+      
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">1</span> Overview & Core Philosophy</h2>
+        <p>Dhvani ("the App", "we", "our", or "us") is an offline-first, standalone media player engineered with uncompromising respect for user sovereignty and privacy. Our business model does <strong>not</strong> rely on advertising, telemetry collection, or selling consumer profiles.</p>
+        <p><strong>We collect, store, transmit, and sell zero personally identifiable information.</strong> The music on your device belongs entirely to you.</p>
+      </div>
+
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">2</span> What Information We Do NOT Collect</h2>
+        <ul>
+          <li><strong>No Personal Identifiers:</strong> We do not collect names, email addresses, phone numbers, contacts, or biometric data.</li>
+          <li><strong>No Device Tracking:</strong> We do not capture Advertising IDs (GAID), IMEI, hardware identifiers, or IP logs.</li>
+          <li><strong>No Analytics SDKs:</strong> Dhvani contains no third-party tracking scripts, Firebase Analytics, Facebook SDKs, or behavioural profiling suites.</li>
+          <li><strong>No Advertisements:</strong> The application is completely ad-free.</li>
+        </ul>
+      </div>
+
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">3</span> Device Permissions and Purpose</h2>
+        <p>To deliver an audio listening experience, Dhvani requests specific device capabilities strictly confined to their stated utility:</p>
+        <ul>
+          <li><strong>Audio & Media Storage (<code>READ_MEDIA_AUDIO</code>, <code>READ_EXTERNAL_STORAGE</code>):</strong> Required to scan, index, and playback your locally stored music files, parse ID3 tags, and extract cover art. Dhvani only reads audio formats and never inspects personal photos, videos, or unrelated documents.</li>
+          <li><strong>Foreground Service (<code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>):</strong> Mandated by Android operating systems to ensure uninterrupted audio streaming when Dhvani runs in the background or when your screen is locked.</li>
+          <li><strong>Notifications (<code>POST_NOTIFICATIONS</code>):</strong> Utilized on Android 13+ solely to render lockscreen and notification drawer playback media controls (Play, Pause, Skip, Track Title, and Artwork).</li>
+          <li><strong>Wake Lock (<code>WAKE_LOCK</code>):</strong> Prevents your device processor from sleeping while audio is actively decoding.</li>
+        </ul>
+      </div>
+
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">4</span> Network Communication (Lyrics Retrieval)</h2>
+        <p>Dhvani is fundamentally an offline application. The sole optional feature that accesses the Internet is our synchronized lyrics fetcher:</p>
+        <p>When you view lyrics or tap "Auto-fetch from LRCLIB", Dhvani transmits an anonymous HTTPS request to the public <strong>LRCLIB API</strong> containing only the track's title, artist name, and duration. This query carries no account credentials, device identifiers, or tracking tokens.</p>
+      </div>
+
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">5</span> Data Storage & Security</h2>
+        <p>All playlists, favorites, play counters, listening history, custom equalizer configurations, and ID3 tag edits are stored exclusively inside local databases (such as ObjectBox and SharedPreferences) located on your physical hardware. Removing the application permanently deletes this local cache.</p>
+      </div>
+
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">6</span> Children's Privacy</h2>
+        <p>Dhvani does not knowingly solicit or collect personal information from children under 13 years of age. Because no data is harvested from any user, Dhvani is safe for audiences of all ages and complies with COPPA and GDPR regulations.</p>
+      </div>
+
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- TERMS AND CONDITIONS SECTION -->
+    <!-- ================================================================= -->
+    <div id="content-terms" style="display: none;">
+
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">1</span> Agreement to Terms</h2>
+        <p>By downloading, installing, accessing, or using Dhvani ("the Application"), you agree to be bound by these Terms and Conditions. If you do not agree to all terms herein, you must immediately uninstall and discontinue using the Application.</p>
+      </div>
+
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">2</span> User Responsibility & Sole Risk</h2>
+        <p>Dhvani is a software utility designed for playing, managing, and editing metadata of locally stored audio files provided by you.</p>
+        
+        <div class="callout-liability">
+          <h4>⚠️ Complete Disclaimer of Responsibility & Risk</h4>
+          <p><strong>YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT YOUR USE OF DHVANI IS AT YOUR SOLE AND EXCLUSIVE RISK. THE DEVELOPER ASSUMES ZERO LEGAL, FINANCIAL, OR CIVIL LIABILITY FOR ANY LOSS, DAMAGE, INJURY, OR DISPUTE ARISING FROM YOUR INSTALLATION OR USE OF THE APPLICATION.</strong></p>
+        </div>
+
+        <ul>
+          <li><strong>Your Audio Content:</strong> You represent and warrant that you hold lawful copyright, licenses, or ownership of all audio files, lyrics, and artwork imported into or processed by the Application. The developer does not host, curate, or distribute copyrighted media and disclaims all liability for copyright infringement committed by users.</li>
+          <li><strong>File Modifications & ID3 Tagging:</strong> While Dhvani incorporates safety safeguards, editing tags (ID3 tags) or deleting files via the app carries inherent risk of file corruption or permanent loss. You are solely responsible for keeping independent backups of your media.</li>
+          <li><strong>Hearing Safety:</strong> Prolonged exposure to high sound volumes can cause permanent hearing damage. You are solely responsible for monitoring playback volume and equalizer amplification levels.</li>
+        </ul>
+      </div>
+
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">3</span> "AS IS" and "AS AVAILABLE" Warranty Disclaimer</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, DHVANI IS PROVIDED STRICTLY ON AN <strong>"AS IS"</strong> AND <strong>"AS AVAILABLE"</strong> BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE.</p>
+        <p>THE DEVELOPER EXPRESSLY DISCLAIMS ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, SYSTEM INTEGRATION, AND NON-INFRINGEMENT. NO GUARANTEE IS MADE THAT THE APPLICATION WILL OPERATE ERROR-FREE, UNINTERRUPTED, OR COMPATIBLE WITH EVERY HARDWARE OR OPERATING SYSTEM CONFIGURATION.</p>
+      </div>
+
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">4</span> Limitation of Liability</h2>
+        <p>UNDER NO CIRCUMSTANCES SHALL THE DEVELOPER, CONTRIBUTORS, OR AFFILIATES BE HELD LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF DATA, CORRUPTION OF AUDIO FILES, HARDWARE DAMAGE, DEVICE CRASHES, LOSS OF PROFITS, OR BUSINESS INTERRUPTION) ARISING OUT OF OR IN CONNECTION WITH YOUR ACCESS TO, INABILITY TO ACCESS, OR USE OF DHVANI, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+      </div>
+
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">5</span> Right of Revocability & Modifications</h2>
+        <p>The developer reserves the sole right, at any time and without prior notice or liability to you, to:</p>
+        <ul>
+          <li>Modify, suspend, restrict, or discontinue any feature or the entire Application.</li>
+          <li>Revoke, alter, or terminate the license granted herein at will.</li>
+          <li>Update these Terms or the Privacy Policy. Continued use of the Application following published updates constitutes full acceptance of the revised terms.</li>
+        </ul>
+      </div>
+
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">6</span> Indemnification</h2>
+        <p>You agree to defend, indemnify, and hold harmless the developer and maintainers from and against any claims, liabilities, damages, losses, costs, or expenses (including reasonable legal fees) arising from or relating to: (a) your use or misuse of the Application; (b) your violation of these Terms; or (c) your infringement of any intellectual property or third-party rights.</p>
+      </div>
+
+      <div class="legal-card">
+        <h2 class="section-title"><span class="number">7</span> Severability & Entire Agreement</h2>
+        <p>If any provision of these Terms is found to be unlawful, invalid, or unenforceable, that provision shall be deemed severable and shall not affect the validity and enforceability of the remaining provisions.</p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 <strong>Dhvani</strong>. Developed by Vikash Choudhary. All rights reserved.</p>
+      <p style="margin-top: 8px;">
+        <a href="https://github.com/1VikashChoudhary/Dhvani" target="_blank" rel="noopener noreferrer">GitHub Repository</a> • 
+        <a href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to Top</a>
+      </p>
+    </footer>
+
+  </div>
+
+  <script>
+    function showTab(tab) {
+      const privacyContent = document.getElementById('content-privacy');
+      const termsContent = document.getElementById('content-terms');
+      const tabPrivacy = document.getElementById('tab-privacy');
+      const tabTerms = document.getElementById('tab-terms');
+
+      if (tab === 'privacy') {
+        privacyContent.style.display = 'block';
+        termsContent.style.display = 'none';
+        tabPrivacy.classList.add('active');
+        tabTerms.classList.remove('active');
+      } else {
+        privacyContent.style.display = 'none';
+        termsContent.style.display = 'block';
+        tabPrivacy.classList.remove('active');
+        tabTerms.classList.add('active');
+      }
+    }
+
+    // Handle URL hash navigation (e.g. #terms or #privacy)
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.location.hash === '#terms') {
+        showTab('terms');
+      }
+    });
+  </script>
+</body>
+</html>
